@@ -1,0 +1,17 @@
+html
+   head
+    include partials/head.jade
+   body
+    include partials/menu.jade
+    br
+    br
+    br
+    include partials/headline.jade
+    br
+    .container
+      .row
+        - for (var i = 1; i <= numberOfImages; i++)
+              .col-md-6
+               .thumbnail
+                 img(src='/images/'+city+'/'+city+'-'+i+'.jpg')
+    include partials/jsIncludes.jade
